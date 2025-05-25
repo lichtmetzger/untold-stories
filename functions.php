@@ -3,6 +3,7 @@ require get_template_directory() . '/inc/helpers.php';
 require get_template_directory() . '/inc/sanitization.php';
 require get_template_directory() . '/inc/functions.php';
 require get_template_directory() . '/inc/helpers-post-meta.php';
+require get_template_directory() . '/inc/taxonomies-post.php';
 require get_template_directory() . '/inc/custom-fields-post.php';
 require get_template_directory() . '/inc/custom-fields-page.php';
 require get_template_directory() . '/inc/customizer.php';
