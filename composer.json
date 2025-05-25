@@ -1,0 +1,20 @@
+{
+  "name": "lichtmetzger/untold-stories",
+  "description": "The WordPress Blog Theme",
+  "authors": [
+    {
+      "name": "CSSIgniter",
+      "homepage": "https://www.cssigniter.com/"
+    },
+    {
+      "name": "Danny Schmarsel",
+      "email": "danny@schmarsel.de"
+    }
+  ],
+  "scripts": {
+    "make-pot": "./vendor/bin/wp i18n make-pot --domain=untold-stories . languages/untoldstories.pot"
+  },
+  "require-dev": {
+    "wp-cli/wp-cli-bundle": "*"
+  }
+}

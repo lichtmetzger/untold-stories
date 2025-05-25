@@ -44,13 +44,13 @@ wp_enqueue_style('template-post-archive', get_stylesheet_directory_uri() . '/css
                                                 $comments_count = get_comments_number($arcresult2->ID);
                                                 switch($comments_count) {
                                                     case 0:
-                                                        echo '<span class="kwa_ccount count_0">&nbsp; - Keine Kommentare</span>';
+                                                        echo '<span class="kwa_ccount count_0">&nbsp; - '.__('No comments', 'untold-stories').'</span>';
                                                         break;
                                                     case 1:
-                                                        echo '<span class="kwa_ccount count_1">&nbsp; - Ein Kommentar</span>';
+                                                        echo '<span class="kwa_ccount count_1">&nbsp; - '.__('1 comment', 'untold-stories').'</span>';
                                                         break;
                                                     default:
-                                                        echo '<span class="kwa_ccount count_multi">&nbsp; - '.$comments_count.' Kommentare</span>';
+                                                        echo '<span class="kwa_ccount count_multi">&nbsp; - '.sprintf(__('%s comments', 'untold-stories'), $comments_count).'</span>';
                                                         break;
                                                 }
                                                 echo '</li>', "\n";
