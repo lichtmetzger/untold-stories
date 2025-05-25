@@ -1,0 +1,1361 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Untold Stories\n"
+"POT-Creation-Date: 2021-03-29 13:14+0300\n"
+"PO-Revision-Date: 2025-05-25 15:59+0200\n"
+"Last-Translator: Anastis Sourgoutsidis <anastis@cssigniter.com>\n"
+"Language-Team: Anastis Sourgoutsidis <anastis@cssigniter.com>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-1: plugins\n"
+
+#: 404.php:6
+msgid "Page not found"
+msgstr "Seite nicht gefunden"
+
+#: 404.php:16
+msgid "The page you were looking for can not be found! Perhaps try searching?"
+msgstr ""
+"Die gewünschte Seite kann nicht gefunden werden! Möchtest du die ,Suche' nutzen?"
+
+#: comments.php:3
+msgid "Please do not load this page directly. Thanks!"
+msgstr "Bitte lade diese Seite nicht direkt. Danke!"
+
+#: comments.php:15
+msgid "No comments"
+msgstr "Keine Kommentare"
+
+#: comments.php:15
+msgid "1 comment"
+msgstr "1 Kommentar"
+
+#: comments.php:15
+#, no-php-format
+msgid "% comments"
+msgstr "% Kommentare"
+
+#: content-entry-list.php:28 content-entry.php:101
+msgid "Continue Reading"
+msgstr "Weiterlesen"
+
+#: functions.php:80
+msgid "Main Menu"
+msgstr "Hauptmenü"
+
+#: functions.php:81
+msgid "Footer Menu"
+msgstr "Footer-Menü"
+
+#. translators: If there are characters in your language that are not supported by Montserrat and Lato, translate this to 'off'. Do not translate into your own language.
+#: functions.php:120
+msgctxt "Montserrat and Lato fonts: on or off"
+msgid "on"
+msgstr "Ja"
+
+#: functions.php:235
+msgctxt "widget area"
+msgid "Blog"
+msgstr "Blog"
+
+#: functions.php:237
+msgid "This is the main sidebar."
+msgstr "Dies ist die Haupt-Seitenleiste."
+
+#: functions.php:245
+msgctxt "widget area"
+msgid "Pages"
+msgstr "Seiten"
+
+#: functions.php:247
+msgid ""
+"This sidebar appears on your static pages. If empty, the Blog sidebar will be shown "
+"instead."
+msgstr ""
+"Diese Seitenleiste wird auf deinen statischen Seiten angezeigt. Wenn sie leer ist, "
+"wird stattdessen die Blog-Seitenleiste angezeigt."
+
+#: functions.php:255
+msgctxt "widget area"
+msgid "Homepage Carousel"
+msgstr "Startseiten-Karussell"
+
+#: functions.php:257
+msgid ""
+"Widgets assigned here will appear next to the homepage carousel. For best results, "
+"only assign the WP Instagram widget. The widgets assigned here will only be shown if "
+"the carousel is displayed AND the \"Show sidebar next to carousel\" option is "
+"checked (Appearance > Customize > Front Page Carousel)."
+msgstr ""
+"Hier zugewiesene Widgets werden neben dem Karussell der Homepage angezeigt. Die "
+"besten Ergebnisse erzielst du, wenn du nur das WP Instagram-Widget zuweist. Die hier "
+"zugewiesenen Widgets werden nur angezeigt, wenn das Karussell angezeigt wird UND die "
+"Option \"Seitenleiste neben dem Karussell anzeigen\" aktiviert ist (Erscheinungsbild "
+"> Anpassen > Startseiten-Karussell)."
+
+#: functions.php:265
+msgctxt "widget area"
+msgid "Inset Sidebar"
+msgstr "Eingeschobene Seitenleiste"
+
+#: functions.php:267
+msgid ""
+"Widgets assigned here will appear between the slideshow and the content of your "
+"website (for the homepage) or the logo and the main content of your website (for all "
+"other pages). You can set a general title of this section in the Customizer > Layout "
+"Options."
+msgstr ""
+"Die hier zugewiesenen Widgets werden zwischen der Diashow und dem Inhalt Ihrer "
+"Website (für die Startseite) oder dem Logo und dem Hauptinhalt deiner Website (für "
+"alle anderen Seiten) angezeigt. Du kannst einen allgemeinen Titel für diesen Bereich "
+"im Customizer > Layout-Optionen festlegen."
+
+#: functions.php:275
+msgctxt "widget area"
+msgid "Footer Sidebar"
+msgstr "Footer-Seitenleiste"
+
+#: functions.php:277
+msgid "Special site-wide sidebar for the WP Instagram Widget plugin."
+msgstr "Spezielle Seitenleiste (Gesamtbreite) für das WP Instagram Widget-Plugin."
+
+#: functions.php:343
+msgid "Pages:"
+msgstr "Seiten:"
+
+#: functions.php:421
+msgid "Opening Text"
+msgstr "Einleitungstext"
+
+#: functions.php:506
+msgctxt "background repeat"
+msgid "No Repeat"
+msgstr "Keine Wiederholung"
+
+#: functions.php:507
+msgctxt "background repeat"
+msgid "Repeat"
+msgstr "Wiederholung"
+
+#: functions.php:508
+msgctxt "background repeat"
+msgid "Repeat Horizontally"
+msgstr "Horizontal wiederholen"
+
+#: functions.php:509
+msgctxt "background repeat"
+msgid "Repeat Vertically"
+msgstr "Vertikal wiederholen"
+
+#: functions.php:525
+msgctxt "horizontal position"
+msgid "Left"
+msgstr "Links"
+
+#: functions.php:526
+msgctxt "horizontal position"
+msgid "Center"
+msgstr "Zentriert"
+
+#: functions.php:527
+msgctxt "horizontal position"
+msgid "Right"
+msgstr "Rechts"
+
+#: functions.php:542
+msgctxt "vertical position"
+msgid "Top"
+msgstr "Oben"
+
+#: functions.php:543
+msgctxt "vertical position"
+msgid "Center"
+msgstr "Zentriert"
+
+#: functions.php:544
+msgctxt "vertical position"
+msgid "Bottom"
+msgstr "Unten"
+
+#: functions.php:649
+msgid "Facebook"
+msgstr "Facebook"
+
+#: functions.php:654
+msgid "Twitter"
+msgstr "Twitter"
+
+#: functions.php:659
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: functions.php:664
+msgid "Instagram"
+msgstr "Instagram"
+
+#: functions.php:669
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: functions.php:674
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: functions.php:679
+msgid "Flickr"
+msgstr "Flickr"
+
+#: functions.php:684
+msgid "Bloglovin"
+msgstr "Bloglovin"
+
+#: functions.php:689
+msgid "YouTube"
+msgstr "YouTube"
+
+#: functions.php:694
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: functions.php:699
+msgid "Dribbble"
+msgstr "Dribbble"
+
+#: functions.php:704
+msgid "WordPress"
+msgstr "WordPress"
+
+#: functions.php:709
+msgid "500px"
+msgstr "500px"
+
+#: functions.php:714
+msgid "Soundcloud"
+msgstr "Soundcloud"
+
+#: functions.php:719
+msgid "Spotify"
+msgstr "Spotify"
+
+#: functions.php:724
+msgid "Vine"
+msgstr "Vine"
+
+#: functions.php:729
+msgid "Snapchat"
+msgstr "Snapchat"
+
+#: functions.php:734
+msgid "Trip Advisor"
+msgstr "Trip Advisor"
+
+#: functions.php:739
+msgid "Telegram"
+msgstr "Telegram"
+
+#: functions.php:849
+msgid "Demo Import"
+msgstr "Demo-Import"
+
+#: header.php:31
+msgid "Menu"
+msgstr "Menü"
+
+#: inc/custom-fields-page.php:6
+msgid "Looks Details"
+msgstr "Aussehen-Details"
+
+#: inc/custom-fields-page.php:27
+msgid "2 Columns - With sidebar"
+msgstr "Zweispaltig - mit Seitenleiste"
+
+#: inc/custom-fields-page.php:28
+msgid "3 Columns - Full width"
+msgstr "Dreispaltig - Volle Breite"
+
+#: inc/custom-fields-page.php:30
+msgid "Layout:"
+msgstr "Layout:"
+
+#: inc/custom-fields-page.php:33
+msgid ""
+"Select a base category. Only items from the selected category and sub-categories "
+"will be displayed. If you don't select one (i.e. empty) all items will be shown."
+msgstr ""
+"Wähle eine Basiskategorie aus. Es werden nur Artikel aus der ausgewählten Kategorie "
+"und den Unterkategorien angezeigt. Wenn du keine Kategorie auswählst (d. h. leer), "
+"werden alle Einträge angezeigt."
+
+#: inc/custom-fields-page.php:34
+msgid "Base Looks category:"
+msgstr "Basisaussehen-Kategorie:"
+
+#: inc/custom-fields-page.php:52
+#, php-format
+msgid ""
+"Set the number of items per page that you want to display. Setting this to "
+"<strong>-1</strong> will show <em>all items</em>, while setting it to zero or "
+"leaving it empty, will follow the global option set from <em>Settings > Reading</"
+"em>, currently set to <strong>%s items per page</strong>."
+msgstr ""
+"Lege die Anzahl der Elemente pro Seite fest, die du anzeigen möchtest. Wenn du hier "
+"den Wert <strong>-1</strong> eingibst, werden <em>alle Elemente</em> angezeigt. Wenn "
+"du den Wert auf Null setzt oder das Feld leer lässt, wird die globale Option aus "
+"<em>Einstellungen &gt; Lesen</em> übernommen, die derzeit auf <strong>%s Elemente "
+"pro Seite</strong> eingestellt ist."
+
+#: inc/custom-fields-page.php:53
+msgid "Items per page:"
+msgstr "Einträge pro Seite:"
+
+#: inc/custom-fields-post.php:6
+msgid "Post Utilities"
+msgstr "Beitrags-Werkzeuge"
+
+#: inc/custom-fields-post.php:7
+msgid "Gallery Details"
+msgstr "Galerie-Details"
+
+#: inc/custom-fields-post.php:27
+msgid "Layout"
+msgstr "Layout"
+
+#: inc/custom-fields-post.php:29
+msgctxt "post layout"
+msgid "With sidebar"
+msgstr "Mit Seitenleiste"
+
+#: inc/custom-fields-post.php:30
+msgctxt "post layout"
+msgid "Full width"
+msgstr "Volle Breite"
+
+#: inc/custom-fields-post.php:32
+msgid "Post layout:"
+msgstr "Beitrags-Layout:"
+
+#: inc/custom-fields-post.php:35
+msgid "Secondary image"
+msgstr "Sekundäres Bild"
+
+#: inc/custom-fields-post.php:36
+msgid ""
+"The Looks page template uses images in portrait (tall) orientation. If the Featured "
+"Image of this post is in landscape (wide) orientation, you may want to provide a "
+"portrait image to be used instead, otherwise an automatically cropped image (based "
+"on the Featured Image) will be used."
+msgstr ""
+"Die Seitenvorlage \"Aussehen\" verwendet Bilder im Hochformat. Wenn das Titelbild "
+"dieses Beitrags im Querformat (breit) ist, kannst du ein Hochformatbild angeben, das "
+"stattdessen verwendet werden soll. Andernfalls wird ein automatisch zugeschnittenes "
+"Bild (basierend auf dem Titelbild) verwendet."
+
+#: inc/custom-fields-post.php:47 inc/helpers-post-meta.php:29 inc/term-meta.php:40
+#: inc/user-meta.php:59 inc/widgets/untoldstories-about-me.php:117
+#: inc/widgets/untoldstories-about-me.php:145 inc/widgets/untoldstories-callout.php:85
+msgid "Remove image"
+msgstr "Bild entfernen"
+
+#: inc/custom-fields-post.php:53 inc/term-meta.php:19 inc/term-meta.php:46
+#: inc/user-meta.php:65 inc/widgets/untoldstories-about-me.php:123
+#: inc/widgets/untoldstories-about-me.php:151 inc/widgets/untoldstories-callout.php:91
+msgid "Select Image"
+msgstr "Bild auswählen"
+
+#: inc/custom-fields-post.php:67
+msgctxt "gallery layout"
+msgid "Tiled"
+msgstr "Gekachelt"
+
+#: inc/custom-fields-post.php:68
+msgctxt "gallery layout"
+msgid "Slider"
+msgstr "Slider"
+
+#: inc/custom-fields-post.php:70
+msgid "Gallery layout:"
+msgstr "Galerie-Layout:"
+
+#: inc/customizer-controls/slick.php:83
+msgid "Show slider."
+msgstr "Slider anzeigen."
+
+#: inc/customizer-controls/slick.php:90
+msgid "Auto slide."
+msgstr "Automatische Slide."
+
+#: inc/customizer-controls/slick.php:119
+msgid "Source category"
+msgstr "Quellkategorie"
+
+#: inc/customizer-controls/slick.php:126
+msgid "Post IDs"
+msgstr "Beitrags-IDs"
+
+#: inc/customizer-controls/slick.php:127
+msgid ""
+"You can optionally provide a comma separated list of post IDs. The specific posts "
+"will be shown, overriding the source category above. The limit number is still "
+"honoured however."
+msgstr ""
+"Du kannst optional eine durch Kommata getrennte Liste von Beitrags-IDs angeben. Die "
+"spezifischen Beiträge werden angezeigt, wobei die obige Quellkategorie außer Kraft "
+"gesetzt wird. Die Höchstzahl wird jedoch weiterhin beachtet."
+
+#: inc/customizer-controls/slick.php:134
+msgid "Limit posts:"
+msgstr "Beiträge begrenzen:"
+
+#: inc/customizer-controls/slick.php:141
+msgid "Slide change effect:"
+msgstr "Slide-Wechsel-Effekt"
+
+#: inc/customizer-controls/slick.php:143
+msgctxt "slick slider slide effect"
+msgid "Slide"
+msgstr "Gleiten"
+
+#: inc/customizer-controls/slick.php:144
+msgctxt "slick slider slide effect"
+msgid "Fade"
+msgstr "Überblenden"
+
+#: inc/customizer-controls/slick.php:151
+msgid "Pause between slides (in milliseconds):"
+msgstr "Pause zwischen den Slides (in Millisekunden):"
+
+#: inc/customizer.php:13
+msgctxt "customizer panel title"
+msgid "Header"
+msgstr "Kopfzeile"
+
+#: inc/customizer.php:14
+msgid "Options affecting the header area."
+msgstr "Optionen, die den Kopfbereich betreffen."
+
+#: inc/customizer.php:18
+msgctxt "customizer section title"
+msgid "Top Bar"
+msgstr "Kopfleiste"
+
+#: inc/customizer.php:19
+msgid "Header Bar related options."
+msgstr "Optionen für die Kopfleiste."
+
+#: inc/customizer.php:24
+msgctxt "customizer section title"
+msgid "Logo"
+msgstr "Logo"
+
+#: inc/customizer.php:25
+msgid "Logo related options."
+msgstr "Logobezogene Optionen."
+
+#: inc/customizer.php:29
+msgctxt "customizer section title"
+msgid "Background"
+msgstr "Hintergrund"
+
+#: inc/customizer.php:30
+msgid "Header Background options."
+msgstr "Optionen für den Kopfzeilenhintergrund."
+
+#: inc/customizer.php:36
+msgctxt "customizer section title"
+msgid "Layout Options"
+msgstr "Layout-Optionen"
+
+#: inc/customizer.php:41
+msgctxt "customizer section title"
+msgid "Front Page Carousel"
+msgstr "Karussell der Titelseite"
+
+#: inc/customizer.php:46
+msgctxt "customizer section title"
+msgid "Typography Options"
+msgstr "Typografie-Optionen"
+
+#: inc/customizer.php:50
+msgid "Content Colors"
+msgstr "Inhaltsfarben"
+
+#: inc/customizer.php:54
+msgctxt "customizer section title"
+msgid "Sidebar Colors"
+msgstr "Seitenleisten-Farben"
+
+#: inc/customizer.php:55
+msgid "These options affect your sidebar (when visible)."
+msgstr "Diese Optionen wirken sich auf deine Seitenleiste aus (sofern sichtbar)."
+
+#: inc/customizer.php:66
+msgctxt "customizer section title"
+msgid "Social Networks"
+msgstr "Soziale Netzwerke"
+
+#: inc/customizer.php:67
+msgid ""
+"Enter your social network URLs. Leaving a URL empty will hide its respective icon."
+msgstr ""
+"Gib die URL’s zu deinen Sozialen Netzwerken ein. Wenn du die URL leer lässt, wird "
+"das dazugehörige Icon nicht angezeigt."
+
+#: inc/customizer.php:72
+msgctxt "customizer section title"
+msgid "Posts Options"
+msgstr "Beitragsoptionen"
+
+#: inc/customizer.php:73
+msgid "These options affect your individual posts."
+msgstr "Diese Optionen wirken sich auf deine einzelnen Beiträge aus."
+
+#: inc/customizer.php:78
+msgctxt "customizer section title"
+msgid "Pages Options"
+msgstr "Seitenoptionen"
+
+#: inc/customizer.php:79
+msgid "These options affect your individual pages."
+msgstr "Diese Optionen betreffen deine einzelnen Seiten."
+
+#: inc/customizer.php:84
+msgctxt "customizer section title"
+msgid "Footer Options"
+msgstr "Footer-Optionen"
+
+#: inc/customizer.php:95
+msgctxt "customizer section title"
+msgid "Theme Options"
+msgstr "Theme-Optionen"
+
+#: inc/customizer.php:115
+msgid "Inset widgetized area title"
+msgstr "Titel des eingefügten widgetisierten Bereichs"
+
+#: inc/customizer.php:119
+msgctxt "page layout"
+msgid "Classic - Sidebar"
+msgstr "Klassisch - Seitenleiste"
+
+#: inc/customizer.php:120
+msgctxt "page layout"
+msgid "Classic - Full width"
+msgstr "Klassisch - Volle Breite"
+
+#: inc/customizer.php:121
+msgctxt "page layout"
+msgid "Small images - Sidebar"
+msgstr "Kleine Bilder - Seitenleiste"
+
+#: inc/customizer.php:122
+msgctxt "page layout"
+msgid "Small images - Full width"
+msgstr "Kleine Bilder - Volle Breite"
+
+#: inc/customizer.php:123
+msgctxt "page layout"
+msgid "Two columns - Sidebar"
+msgstr "Zwei Spalten - Seitenleiste"
+
+#: inc/customizer.php:124
+msgctxt "page layout"
+msgid "Two columns - Full width"
+msgstr "Zwei Spalten - Volle Breite"
+
+#: inc/customizer.php:125
+msgctxt "page layout"
+msgid "Two columns - Narrow - Full width"
+msgstr "Zwei Spalten - Schmal - Volle Breite"
+
+#: inc/customizer.php:126
+msgctxt "page layout"
+msgid "Two columns - Masonry"
+msgstr "Zwei Spalten - Masonry"
+
+#: inc/customizer.php:127
+msgctxt "page layout"
+msgid "Three columns - Full width"
+msgstr "Drei Spalten - Volle Breite"
+
+#: inc/customizer.php:128
+msgctxt "page layout"
+msgid "Three columns - Masonry - Full width"
+msgstr "Drei Spalten -Masonry - Volle Breite"
+
+#: inc/customizer.php:137
+msgid "Blog layout"
+msgstr "Blog-Layout"
+
+#: inc/customizer.php:138
+msgid "Applies to the home page and blog-related pages."
+msgstr "Gilt für die Startseite und die Blog-Seiten."
+
+#: inc/customizer.php:149
+msgid "Categories and Tags layout"
+msgstr "Kategorien- und Schlagwort-Layout"
+
+#: inc/customizer.php:150
+msgid "Applies to the categories and tags listing pages."
+msgstr "Gilt für die Seiten mit den Kategorien und Tags."
+
+#: inc/customizer.php:161
+msgid "Other Pages layout"
+msgstr "Andere Seiten-Layout"
+
+#: inc/customizer.php:162
+msgid "Applies to all other pages, e.g. search, 404, etc."
+msgstr "Gilt für alle anderen Seiten, z.B. Suche, 404, etc."
+
+#: inc/customizer.php:164
+msgctxt "page layout"
+msgid "With sidebar"
+msgstr "Mit Seitenleiste"
+
+#: inc/customizer.php:165
+msgctxt "page layout"
+msgid "Full width"
+msgstr "Volle Breite"
+
+#: inc/customizer.php:180
+msgid "Automatically generated excerpt length (in words)"
+msgstr "Automatisch generierte Auszugslänge (in Worten)"
+
+#: inc/customizer.php:190
+msgid "Pagination method"
+msgstr "Seitenzahl-System"
+
+#: inc/customizer.php:192
+msgctxt "pagination method"
+msgid "Numbered links"
+msgstr "Nummeriert"
+
+#: inc/customizer.php:193
+msgctxt "pagination method"
+msgid "\"Previous - Next\" links"
+msgstr "\"Zurück\" und \"Weiter\"-Links"
+
+#: inc/customizer.php:209
+msgid "Sticky header."
+msgstr "\"Sticky\" Kopfzeile."
+
+#: inc/customizer.php:210
+msgid "When enabled, the header remains visible when scrolling."
+msgstr "Wenn diese Option aktiviert ist, bleibt die Kopfzeile beim Scrollen sichtbar."
+
+#: inc/customizer.php:220 inc/customizer.php:466
+msgid "Show search bar."
+msgstr "Suchleiste anzeigen."
+
+#: inc/customizer.php:230 inc/customizer.php:476
+msgid "Show social icons."
+msgstr "Social Icons anzeigen."
+
+#: inc/customizer.php:239 inc/customizer.php:357 inc/customizer.php:495
+#: inc/customizer.php:1059
+msgid "Background color"
+msgstr "Hintergrundfarbe"
+
+#: inc/customizer.php:248 inc/customizer.php:1068
+msgid "Border color"
+msgstr "Rahmenfarbe"
+
+#: inc/customizer.php:257 inc/customizer.php:545 inc/customizer.php:851
+msgid "Text color"
+msgstr "Textfarbe"
+
+#: inc/customizer.php:266 inc/customizer.php:554 inc/customizer.php:869
+msgid "Link color"
+msgstr "Linkfarbe"
+
+#: inc/customizer.php:275 inc/customizer.php:563
+msgid "Hover color"
+msgstr "Hoverfarbe"
+
+#: inc/customizer.php:284
+msgid "Sub-menu background color"
+msgstr "Hintergrundfarbe Untermenü"
+
+#: inc/customizer.php:293
+msgid "Sub-menu link color"
+msgstr "Linkfarbe Untermenü"
+
+#: inc/customizer.php:302
+msgid "Sub-menu hover color"
+msgstr "Hoverfarbe Untermenü"
+
+#: inc/customizer.php:317
+msgid "Logo"
+msgstr "Logo"
+
+#: inc/customizer.php:318
+msgid ""
+"If an image is selected, it will replace the default textual logo (site name) on the "
+"header."
+msgstr ""
+"Wenn ein Bild ausgewählt wird, ersetzt es das Standard-Textlogo (Name der Website) "
+"in der Kopfzeile."
+
+#: inc/customizer.php:329
+msgid "Logo top padding"
+msgstr "Logo-Innenabstand oben"
+
+#: inc/customizer.php:340
+msgid "Logo bottom padding"
+msgstr "Logo-Innenabstand unten"
+
+#: inc/customizer.php:371 inc/customizer.php:513
+msgid "Background Image Repeat"
+msgstr "Hintergrundbild wiederholen"
+
+#: inc/customizer.php:383 inc/customizer.php:524
+msgid "Background Image Horizontal Position"
+msgstr "Hintergrundbild Horizontale Position"
+
+#: inc/customizer.php:395 inc/customizer.php:535
+msgid "Background Image Vertical Position"
+msgstr "Hintergrundbild Vertikale Position"
+
+#: inc/customizer.php:407
+msgid "Fixed Background Image."
+msgstr "Festes Hintergrundbild."
+
+#: inc/customizer.php:408
+msgid "If checked, the image will not scroll along with the page."
+msgstr "Wenn diese Option aktiviert ist, scrollt das Bild nicht mit der Seite mit."
+
+#: inc/customizer.php:419
+msgid "Logo bottom margin"
+msgstr "Logo-Außenabstand unten"
+
+#: inc/customizer.php:420
+msgid ""
+"When a header image or color is set, you may want to increase this value for visual "
+"separation."
+msgstr ""
+"Wenn ein Bild oder eine Farbe für die Kopfzeile eingestellt ist, solltest du diesen "
+"Wert erhöhen, um eine optische Trennung zu erreichen."
+
+#: inc/customizer.php:434
+msgid "Reveal effect."
+msgstr "Enthüllungseffekt."
+
+#: inc/customizer.php:435
+msgid ""
+"When enabled, the footer reveals itself progressively instead of following the page."
+msgstr ""
+"Wenn diese Option aktiviert ist, wird die Fußzeile nach und nach eingeblendet, "
+"anstatt der Seite zu folgen."
+
+#: inc/customizer.php:445
+msgid "Footer text"
+msgstr "Fußzeilen-Text"
+
+#: inc/customizer.php:446
+msgid ""
+"Allowed tags: a (href|class), img (src|class), span (class), i (class), b, em, "
+"strong."
+msgstr ""
+"Erlaubte tags: a (href|class), img (src|class), span (class), i (class), b, em, "
+"strong."
+
+#: inc/customizer.php:456
+msgid "Show tagline."
+msgstr "Tagline anzeigen."
+
+#: inc/customizer.php:485
+msgid "Footer Logo"
+msgstr "Fußzeilen-Logo"
+
+#: inc/customizer.php:486
+msgid ""
+"If an image is selected, it will replace the default textual logo (site name) on the "
+"footer."
+msgstr ""
+"Wenn ein Bild ausgewählt wird, ersetzt es das Standard-Textlogo (Name der Website) "
+"in der Fußzeile."
+
+#: inc/customizer.php:503
+msgid "Background Image"
+msgstr "Hintergrundbild"
+
+#: inc/customizer.php:574
+msgid "WP Instagram: Slideshow."
+msgstr "WP Instagram: Slideshow."
+
+#: inc/customizer.php:584
+msgid "WP Instagram: Slideshow Speed."
+msgstr "WP Instagram: Slideshow-Geschwindigkeit."
+
+#: inc/customizer.php:600
+msgid "Site-wide social icons."
+msgstr "Seitenweite Social-Icons"
+
+#: inc/customizer.php:601
+msgid ""
+"Shows floating icons on the side of your website. Not visible on mobile devices."
+msgstr ""
+"Zeigt schwebende Symbole am Rand deiner Website an. Auf mobilen Geräten nicht "
+"sichtbar."
+
+#: inc/customizer.php:615
+#, php-format
+msgctxt "social network url"
+msgid "%s URL"
+msgstr "%s URL"
+
+#: inc/customizer.php:626
+msgid "RSS Feed"
+msgstr "RSS-Feed"
+
+#: inc/customizer.php:641
+msgid "H1 size"
+msgstr "H1-Größe"
+
+#: inc/customizer.php:651
+msgid "H2 size"
+msgstr "H2-Größe"
+
+#: inc/customizer.php:661
+msgid "H3 size"
+msgstr "H3-Größe"
+
+#: inc/customizer.php:671
+msgid "H4 size"
+msgstr "H4-Größe"
+
+#: inc/customizer.php:681
+msgid "H5 size"
+msgstr "H5-Größe"
+
+#: inc/customizer.php:691
+msgid "H6 size"
+msgstr "H6-Größe"
+
+#: inc/customizer.php:701
+msgid "Body text size"
+msgstr "Textgröße des Seiteninhalts"
+
+#: inc/customizer.php:711
+msgid "Widgets title size"
+msgstr "Textgröße der Widget-Titel"
+
+#: inc/customizer.php:721
+msgid "Capitalize textual logo and site tagline."
+msgstr "Textlogo und Website-Tagline groß schreiben."
+
+#: inc/customizer.php:731
+msgid "Capitalize navigation menus."
+msgstr "Navigationsmenüs groß schreiben."
+
+#: inc/customizer.php:741
+msgid "Capitalize post content headings (H1-H6)."
+msgstr "Überschriften von Beiträgen (H1-H6) groß schreiben."
+
+#: inc/customizer.php:751
+msgid "Capitalize post titles."
+msgstr "Beitragstitel groß schreiben."
+
+#: inc/customizer.php:761
+msgid "Capitalize entry meta (categories, time, tags)."
+msgstr "Beitragsmetas (Kategorien, Zeit, Tags) groß schreiben."
+
+#: inc/customizer.php:771
+msgid "Capitalize widget titles."
+msgstr "Widget-Titel groß schreiben."
+
+#: inc/customizer.php:781
+msgid "Capitalize button text."
+msgstr "Buttontext groß schreiben."
+
+#: inc/customizer.php:791
+msgid "Home Carousel"
+msgstr "Startseiten-Karussell"
+
+#: inc/customizer.php:792
+msgid "Fine-tune the homepage carousel."
+msgstr "Feinabstimmung des Startseiten-Karussells."
+
+#: inc/customizer.php:804
+msgid "Alternative carousel styling."
+msgstr "Alternative Gestaltung des Karussells."
+
+#: inc/customizer.php:814
+msgid "Fullwidth slider."
+msgstr "Slider mit voller Breite."
+
+#: inc/customizer.php:815
+msgid "When checked, the \"Show sidebar\" option below will be ignored."
+msgstr ""
+"Wenn diese Option aktiviert ist, wird die Option \"Seitenleiste anzeigen\" unten "
+"ignoriert."
+
+#: inc/customizer.php:825
+msgid "Show sidebar next to carousel."
+msgstr "Seitenleiste neben dem Karussell anzeigen."
+
+#: inc/customizer.php:826
+msgid ""
+"The widgets that will be shown next to the carousel, should be assigned to the "
+"\"Homepage Carousel\" widget area. For best results, only assign the WP Instagram "
+"widget."
+msgstr ""
+"Die Widgets, die neben dem Karussell angezeigt werden, sollten dem Widget-Bereich "
+"\"Startseiten-Karussell\" zugewiesen werden. Die besten Ergebnisse erzielst du, wenn "
+"du nur das WP Instagram-Widget zuweist."
+
+#: inc/customizer.php:860
+msgid "Headings color"
+msgstr "Überschriftenfarbe"
+
+#: inc/customizer.php:878
+msgid "Link hover color"
+msgstr "Linkfarbe (Hover)"
+
+#: inc/customizer.php:887
+msgid "Button background color"
+msgstr "Button-Hintergrundfarbe"
+
+#: inc/customizer.php:896
+msgid "Button text color"
+msgstr "Button-Textfarbe"
+
+#: inc/customizer.php:905
+msgid "Button background hover color"
+msgstr "Button-Hintergrundfarbe (Hover)"
+
+#: inc/customizer.php:920
+msgid "Show categories."
+msgstr "Kategorien anzeigen."
+
+#: inc/customizer.php:930
+msgid "Show tags."
+msgstr "Schlagworte anzeigen."
+
+#: inc/customizer.php:940
+msgid "Show date."
+msgstr "Datum anzeigen."
+
+#: inc/customizer.php:950
+msgid "Show comments."
+msgstr "Kommentare anzeigen."
+
+#: inc/customizer.php:960
+msgid "Show featured media."
+msgstr "Vorschaubilder anzeigen."
+
+#: inc/customizer.php:970 inc/customizer.php:1035
+msgid "Show signature."
+msgstr "Signatur anzeigen."
+
+#: inc/customizer.php:980 inc/customizer.php:1045
+msgid "Show social sharing buttons."
+msgstr "Schaltflächen für soziale Netzwerke anzeigen."
+
+#: inc/customizer.php:990
+msgid "Show next/previous post links."
+msgstr "Links zum nächsten/vorherigen Beitrag anzeigen."
+
+#: inc/customizer.php:1000
+msgid "Show author box."
+msgstr "Autorenbox anzeigen."
+
+#: inc/customizer.php:1010
+msgid "Show related posts."
+msgstr "Ähnliche Beiträge anzeigen."
+
+#: inc/customizer.php:1014 part-related.php:4 part-related.php:5
+msgid "You may also like"
+msgstr "Vielleicht gefällt dir auch"
+
+#: inc/customizer.php:1020
+msgid "Related Posts section title"
+msgstr "Titel des Abschnitts \"Ähnliche Beiträge\""
+
+#: inc/customizer.php:1077
+msgid "Widget border color"
+msgstr "Farbe des Widget-Rahmens"
+
+#: inc/customizer.php:1086
+msgid "Widget title background color"
+msgstr "Hintergrundfarbe des Widget-Titels"
+
+#: inc/customizer.php:1095
+msgid "Widget title color"
+msgstr "Farbe des Widget-Titels"
+
+#: inc/customizer.php:1104
+msgid "Widget text color"
+msgstr "Widget-Textfarbe"
+
+#: inc/customizer.php:1113
+msgid "Widget link color"
+msgstr "Widget-Linkfarbe"
+
+#: inc/customizer.php:1122
+msgid "Widget hover color"
+msgstr "Widget-Hoverfarbe"
+
+#: inc/customizer.php:1142
+msgid "Number of products on shop listing page."
+msgstr "Anzahl der Produkte auf der Shop-Auflistungs-Seite."
+
+#: inc/functions.php:99
+msgid "Previous page"
+msgstr "Vorherige Seite"
+
+#: inc/functions.php:100
+msgid "Next page"
+msgstr "Nächste Seite"
+
+#: inc/helpers-post-meta.php:22
+msgid "Select file"
+msgstr "Datei auswählen"
+
+#: inc/helpers-post-meta.php:23
+msgid "Select files"
+msgstr "Dateien auswählen"
+
+#: inc/helpers-post-meta.php:24
+msgid "Use this file"
+msgstr "Verwende diese Datei"
+
+#: inc/helpers-post-meta.php:25
+msgid "Use these files"
+msgstr "Verwende diese Dateien"
+
+#: inc/helpers-post-meta.php:26
+msgid "Update gallery"
+msgstr "Galerie aktualisieren"
+
+#: inc/helpers-post-meta.php:27
+msgid "Loading..."
+msgstr "Lade..."
+
+#: inc/helpers-post-meta.php:28
+msgid "Gallery preview not available."
+msgstr "Vorschau der Galerie nicht verfügbar."
+
+#: inc/helpers-post-meta.php:30 inc/helpers-post-meta.php:491
+msgid "Remove from gallery"
+msgstr "Aus der Galerie entfernen"
+
+#: inc/helpers-post-meta.php:263
+msgid "Click to toggle"
+msgstr "Zum Aus-/Einklappen klicken"
+
+#: inc/helpers-post-meta.php:480
+msgid "Add Images"
+msgstr "Bilder hinzufügen"
+
+#: inc/helpers-post-meta.php:482
+msgid "Randomize order"
+msgstr "Zufällige Reihenfolge"
+
+#: inc/helpers-post-meta.php:497
+msgid "Your gallery images will appear here"
+msgstr "Deine Galerie-Bilder werden hier erscheinen"
+
+#: inc/helpers.php:23
+#, php-format
+msgid ""
+"It looks like the theme was just installed. <a href=\"%s\" "
+"target=\"_blank\">Download the sample content</a> to get things moving."
+msgstr ""
+"Wie es aussieht, wurde das Theme gerade installiert. <a href=\"%s\" "
+"target=\"_blank\">Lade den Beispiel-Inhalt herunter</a>, um loszulegen."
+
+#: inc/term-meta.php:15 inc/term-meta.php:31
+msgid "Image"
+msgstr "Bild"
+
+#: inc/user-meta.php:10
+msgid "Author social networks"
+msgstr "Soziale Netzwerke für Autoren"
+
+#: inc/user-meta.php:21
+#, php-format
+msgid "Your %s profile URL"
+msgstr "Deine %s-Profil-URL"
+
+#: inc/user-meta.php:27
+msgid "Author signature"
+msgstr "Autor-Signatur"
+
+#: inc/user-meta.php:31
+msgid "Greeting text"
+msgstr "Grußtext"
+
+#: inc/user-meta.php:36
+msgid ""
+"Provide a greeting (sign off) message that will be displayed right before your "
+"signature."
+msgstr ""
+"Gib einen Gruß (Verabschiedung) an, die direkt vor deiner Unterschrift angezeigt "
+"wird."
+
+#: inc/user-meta.php:40
+msgid "Signature text"
+msgstr "Signatur-Text"
+
+#: inc/user-meta.php:45
+msgid ""
+"Provide your text signature (e.g. your name). If you set a signature image below, "
+"this text will not be shown."
+msgstr ""
+"Gib deine Textsignatur an (z. B. deinen Namen). Wenn du unten ein Signaturbild "
+"einstellst, wird dieser Text nicht angezeigt."
+
+#: inc/user-meta.php:49
+msgid "Signature image"
+msgstr "Signaturbild"
+
+#: inc/widgets/untoldstories-about-me.php:17
+msgid "Provide information for the blog author, accompanied by a picture."
+msgstr "Gib Informationen für den Blog-Autor, begleitet von einem Bild, ein."
+
+#: inc/widgets/untoldstories-about-me.php:19
+msgid "Theme - About Me"
+msgstr "Theme - Über mich"
+
+#: inc/widgets/untoldstories-about-me.php:106 inc/widgets/untoldstories-callout.php:74
+#: inc/widgets/untoldstories-latest-posts.php:103
+#: inc/widgets/untoldstories-newsletter.php:53 inc/widgets/untoldstories-socials.php:47
+msgid "Title:"
+msgstr "Titel:"
+
+#: inc/widgets/untoldstories-about-me.php:109 inc/widgets/untoldstories-callout.php:77
+msgid "Author Image:"
+msgstr "Autorenbild:"
+
+#: inc/widgets/untoldstories-about-me.php:127
+msgid ""
+"Show round image. For this to work, you need a square image. (200&times;200px or "
+"higher)."
+msgstr ""
+"Rundes Bild anzeigen. Damit dies funktioniert, benötigst du ein quadratisches Bild. "
+"(200×200px oder höher)."
+
+#: inc/widgets/untoldstories-about-me.php:129
+msgid "Invert widget color scheme."
+msgstr "Widget-Farbschema umkehren."
+
+#: inc/widgets/untoldstories-about-me.php:131
+msgid "About text:"
+msgstr "Über mich-Text"
+
+#: inc/widgets/untoldstories-about-me.php:133
+msgid "Greeting (sign off) text:"
+msgstr "Grußtext (Abmeldung):"
+
+#: inc/widgets/untoldstories-about-me.php:134
+msgid "Signature text:"
+msgstr "Signatur-Text"
+
+#: inc/widgets/untoldstories-about-me.php:137
+msgid "Signature Image:"
+msgstr "Signaturbild:"
+
+#: inc/widgets/untoldstories-callout.php:12
+msgid "Display a linked call to action box with a background image and title."
+msgstr ""
+"Zeige eine verlinkte Call-to-Action-Box mit einem Hintergrundbild und einem Titel an."
+
+#: inc/widgets/untoldstories-callout.php:14
+msgid "Theme - Call to Action Box"
+msgstr "Theme - Call to Action-Box"
+
+#: inc/widgets/untoldstories-callout.php:95
+msgid "Link URL:"
+msgstr "Link-URL:"
+
+#: inc/widgets/untoldstories-category-image.php:11
+msgid "Display a linked category image."
+msgstr "Ein verlinktes Kategoriebild anzeigen."
+
+#: inc/widgets/untoldstories-category-image.php:13
+msgid "Theme - Category Image"
+msgstr "Theme - Kategoriebild"
+
+#: inc/widgets/untoldstories-category-image.php:75
+msgid "Title (optional):"
+msgstr "Titel (optional):"
+
+#: inc/widgets/untoldstories-category-image.php:77
+msgid "Category:"
+msgstr "Kategorie:"
+
+#: inc/widgets/untoldstories-latest-posts.php:14
+msgid "Displays a number of the latest (or random) posts from a specific category."
+msgstr ""
+"Zeigt eine Reihe der neuesten (oder zufälligen) Beiträge aus einer bestimmten "
+"Kategorie an."
+
+#: inc/widgets/untoldstories-latest-posts.php:16
+msgid "Theme - Latest Posts"
+msgstr "Theme - neueste Beiträge"
+
+#: inc/widgets/untoldstories-latest-posts.php:105
+msgid "Category to display the latest posts from (optional):"
+msgstr "Kategorie zum Anzeigen der neusten Beiträge (optional):"
+
+#: inc/widgets/untoldstories-latest-posts.php:120
+msgid "Show random posts."
+msgstr "Zufällige Beiträge anzeigen."
+
+#: inc/widgets/untoldstories-latest-posts.php:122
+msgid "Number of posts to show:"
+msgstr "Anzahl der Beiträge:"
+
+#: inc/widgets/untoldstories-latest-posts.php:125
+msgid "Item Layout:"
+msgstr "Artikel-Layout:"
+
+#: inc/widgets/untoldstories-latest-posts.php:127
+msgctxt "item layout"
+msgid "Vertical (big image)"
+msgstr "Vertikal (großes Bild)"
+
+#: inc/widgets/untoldstories-latest-posts.php:128
+msgctxt "item layout"
+msgid "Horizontal (small image)"
+msgstr "Horizontal (kleines Bild)"
+
+#: inc/widgets/untoldstories-newsletter.php:11
+msgid "Provides styling for popular newsletter forms."
+msgstr "Bietet ein Styling für beliebte Newsletter-Formulare."
+
+#: inc/widgets/untoldstories-newsletter.php:13
+msgid "Theme - Newsletter"
+msgstr "Theme - Newsletter"
+
+#: inc/widgets/untoldstories-newsletter.php:55
+msgid ""
+"Paste your newsletter form as given by popular 3rd-party newsletter services, such "
+"as MailChimp, Campaign Monitor, etc."
+msgstr ""
+"Fügen dein Newsletter-Formular ein, wie es von beliebten Newsletter-Diensten durch "
+"Drittanbieter wie MailChimp, Campaign Monitor usw. bereitgestellt wird."
+
+#: inc/widgets/untoldstories-newsletter.php:56
+msgid "Newsletter form HTML:"
+msgstr "Newsletter-Formular HTML:"
+
+#: inc/widgets/untoldstories-newsletter.php:58
+msgid "Automatically add paragraphs"
+msgstr "Absätze automatisch hinzufügen"
+
+#: inc/widgets/untoldstories-socials.php:10
+msgid "Displays the site's social icons."
+msgstr "Zeigt die Social Icons der Website an."
+
+#: inc/widgets/untoldstories-socials.php:12
+msgid "Theme - Social Icons"
+msgstr "Theme - Social Icons"
+
+#: inc/widgets/untoldstories-socials.php:48
+msgid ""
+"This widget displays your site's social icons. In order to set them up, you need to "
+"visit Appearance > Customize > Social Networks and provide the appropriate URLs "
+"where desired."
+msgstr ""
+"Dieses Widget zeigt die Social Icons Ihrer Website an. Um sie einzurichten, musst du "
+"Erscheinungsbild > Anpassen > Soziale Netzwerke aufrufen und die entsprechenden URLs "
+"angeben, sofern gewünscht."
+
+#: part-authorbox.php:16
+msgid ""
+"In this area you can display your biographic info. Just visit Users > Your Profile > "
+"Biographic info"
+msgstr ""
+"In diesem Bereich kannst du deine biografischen Daten anzeigen. Besuche einfach "
+"Benutzer > Dein Profil > Biografische Daten"
+
+#: search.php:16
+msgid "No results found. Please broaden your terms and search again."
+msgstr ""
+"Keine Ergebnisse gefunden. Bitte ändere deine Suchbegriffe und versuche es nochmal."
+
+#: search.php:17
+msgid ""
+"Just one result found. We either nailed it, or you might want to broaden your terms "
+"and search again."
+msgstr ""
+"Nur ein Ergebnis gefunden. Entweder ist das genau richtig, oder du solltest andere "
+"Suchbegriffe verwenden und es nochmal versuchen."
+
+#: search.php:18
+#, php-format
+msgid "%d result found."
+msgid_plural "%d results found."
+msgstr[0] "%d Ergebnis gefunden."
+msgstr[1] "%d Ergebnisse gefunden."
+
+#: search.php:22 searchform.php:4
+msgid "Search"
+msgstr "Suchen"
+
+#: searchform.php:3
+msgid "Search for:"
+msgstr "Suche nach:"
+
+#: searchform.php:5
+msgctxt "submit button"
+msgid "Search"
+msgstr "Suchen"
+
+#: single.php:96
+msgid "Previous Post"
+msgstr "Vorheriger Beitrag"
+
+#: single.php:99
+msgid "Next Post"
+msgstr "Nächster Beitrag"
+
+#. Theme Name of the plugin/theme
+msgid "Untold Stories"
+msgstr "Untold Stories"
+
+#. Theme URI of the plugin/theme
+msgid "http://themeforest.net/item/untold-stories-the-wordpress-blog-theme/12897880"
+msgstr "http://themeforest.net/item/untold-stories-the-wordpress-blog-theme/12897880"
+
+#. Description of the plugin/theme
+msgid "The WordPress Blog Theme"
+msgstr "Das WordPress-Blog-Theme"
+
+#. Author of the plugin/theme
+msgid "CSSIgniter"
+msgstr "CSSIgniter"
+
+#. Author URI of the plugin/theme
+msgid "http://www.cssigniter.com"
+msgstr "http://www.cssigniter.com"
+
+#. Template Name of the plugin/theme
+msgid "Page builder"
+msgstr "Page-Builder"
+
+#. Template Name of the plugin/theme
+msgid "Fullwidth Page"
+msgstr "Seite mit vollständiger Breite"
+
+#. Template Name of the plugin/theme
+msgid "Looks"
+msgstr "Aussehen"
+
+#. Template Name of the plugin/theme
+msgid "Fullwidth Page Wide"
+msgstr "Seite mit weiter Breite"
