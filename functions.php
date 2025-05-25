@@ -843,6 +843,10 @@ function untoldstories_set_default_image_insert_options() {
     <?php
 }
 
+/**
+ *  WordPress core functionality overrides.
+ */
+require_once get_theme_file_path( '/common/core-tweaks.php' );
 
 /**
  *  Common theme features.
