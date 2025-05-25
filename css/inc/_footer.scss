@@ -1,0 +1,93 @@
+/* -----------------------------------------
+	05. Footer
+----------------------------------------- */
+#main-wrap {
+	position: relative;	
+	z-index: 1;
+	background: #fff;
+
+}
+
+#footer {
+	bottom: 0;
+	width: 100%;
+	z-index: 0;	
+	background: #111;
+	color: #fff;
+	padding: 40px 0 0 0;
+	text-align: center;
+
+	&.footer-fixed {
+		position: fixed;
+	}
+
+	a {
+		color: #fff;
+	}
+
+	.site-logo {
+		padding: 0;
+		margin-bottom: 30px;
+
+		h4 {
+			margin-bottom: 5px;
+		}		
+	}
+
+	.nav {
+		margin-bottom: 30px;
+
+		.navigation {
+			text-align: center;
+
+			li {
+				float: none;
+				display: inline-block;
+
+				a {
+					color: #fff;					
+				}
+
+				&:last-child {
+					a { margin-right: 0; }
+				}
+			}
+		}
+	}
+
+	.site-tools {
+		float: none;
+		margin-bottom: 30px;
+		width: 100%; 
+		text-align: center;
+		vertical-align: middle;
+		line-height: normal;
+	}
+
+	form, .socials {
+		float: none;
+		display: inline-block;
+	}
+
+	form {
+		position: relative;
+		top: -3px; 		
+	}
+
+	.socials {
+		a {
+			color: #fff;			
+			position: relative;
+			top: 3px;
+		}
+	}
+
+	.untoldstories-instagram-lite-widget {
+		margin-top: 40px;
+	}
+}
+
+#site-credits {
+	font-size: 10px;
+	margin: 0;
+}

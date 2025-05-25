@@ -1,0 +1,185 @@
+/* -----------------------------------------
+	11. Global Mediaqueries
+----------------------------------------- */
+
+@media (max-width: $screen-md-max) {
+	.site-bar .navigation > li > a {
+		margin-right: 20px;
+	}
+
+	.site-bar .site-tools form {
+		width: 200px;
+	}
+
+	.site-bar .socials a {
+		margin-left: 5px;
+	}
+	
+	.site-socials {
+		display: none;
+	}
+}
+
+@media (max-width: $screen-sm-max) {
+	.mobile-nav-trigger {
+		display: block;
+	}
+
+	.site-bar .navigation {
+		display: none;
+	}
+
+	.site-bar .site-tools {
+		width: 75%;
+	}
+
+	.slicknav_menu {
+		display: block;
+	}
+
+	.site-bar .nav {
+		width: 25%;
+	}
+
+	#sidebar {
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-width: $screen-xs-max) {
+	h2 {
+		font-size: 22px;
+	}
+
+	h3 {
+		font-size: 20px;
+	}
+
+	h4 {
+		font-size: 18px;
+	}
+
+	h5 {
+		font-size: 16px;
+	}
+
+	h6 {
+		font-size: 14px;
+	}
+
+	blockquote {
+		font-size: 16px;
+	}
+
+	.site-header {
+		.socials {
+			display: none;
+		}
+
+		form {
+			width: 100%;
+			float: none;
+		}
+	}
+
+	.site-bar .site-tools {
+		width: 60%;
+
+		form {
+			width: 100%;
+		}
+	}
+
+	.site-logo {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.slick-slider {
+		&.slider-fullwidth {
+			.slick-slide {
+				.slide-content {
+					opacity: 1 !important;
+					display: block !important;
+				}
+			}
+		}
+	}
+
+	.slide {
+		.slide-content {
+			bottom: 20px;
+			left: 20px;
+
+			.slide-title {
+				font-size: 16px;
+				max-width: 90%;
+			}
+		}
+	}
+
+	.slick-slider button {
+		width: 40px;
+		height: 40px;
+		line-height: 1;
+		text-indent: 3px;
+
+		&:before {
+			position: static !important;
+		}
+
+		&.slick-next {
+			bottom: auto;
+			top: 40px;
+			right: 20px;
+		}
+
+		&.slick-prev {
+			bottom: auto;
+			top: 40px;
+			right: 60px;
+		}
+	}
+	
+	.slick-slider-alt button {
+		&.slick-next {
+			bottom: auto;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			transform: translateY(-50%);
+			right: 20px;
+		}
+
+		&.slick-prev {
+			bottom: auto;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			-moz-transform: translateY(-50%);
+			transform: translateY(-50%);
+			right: 60px;
+		}
+	}
+
+	.entry-title {
+		padding: 0;
+	}
+
+	.entry-list {
+		.entry-featured {
+			float: none;
+			width: 100%;
+			margin-right: 0;
+		}
+	}
+
+	.comment-respond input[type="text"],
+	.comment-respond input[type="email"],
+	.comment-respond input[type="url"] {
+		width: 100%;
+	}
+
+	.admin-bar .site-bar-fixed {
+		top: 0;
+	}
+}

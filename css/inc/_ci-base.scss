@@ -1,0 +1,446 @@
+/* -----------------------------------------
+	01. General
+----------------------------------------- */
+
+/* Basic Typography
+=================================== */
+body {
+	line-height: 1.625;
+	font-size: 14px;
+	background-color: #fff;
+	color: $text-color;
+	font-family: $primary-font;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $secondary-font;
+	font-weight: normal;
+	line-height: normal;
+	margin: 0 0 15px 0;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+}
+
+h1 { font-size: 28px; }
+h2 { font-size: 26px; }
+h3 { font-size: 24px; }
+h4 { font-size: 22px; }
+h5 { font-size: 20px; }
+h6 { font-size: 18px; }
+
+p {
+	margin: 0 0 20px 0;
+}
+
+img {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
+
+a {
+	transition: color 0.18s ease, background-color 0.18s ease, border-color 0.18s ease;
+	outline: none;
+	color: $primary-color;
+	text-decoration: none;
+
+	&:hover,
+	&:focus {
+		color: lighten($primary-color, 10%);
+		outline: none;
+		text-decoration: none;
+	}
+
+	&:active {
+		outline: none;
+	}
+}
+
+.group {
+	@include clearfix();
+}
+
+/* General Element Styling
+=================================== */
+
+/* Reset figure margin from normalize.css */
+figure {
+	margin: 0;
+}
+
+/* Lists */
+ul, ol {
+	padding-left: 20px;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+dl {
+	margin: 0 0 20px;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 0 15px;
+}
+
+/* Blockquotes */
+blockquote {
+	margin: 20px 0;
+	padding: 20px;
+	border: 2px solid #ebebeb;
+	font-size: 18px;	
+	font-weight: bold;
+	text-align: center;
+
+	p {
+		margin: 0;
+	}
+
+	cite {
+		display: block;
+		font-weight: bold;
+		font-style: italic;
+		margin: 10px 0 0;
+		color: rgba($text-color, 0.8);
+		font-size: 14px
+	}
+}
+
+/* Tables */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	width: 100%;
+}
+
+.entry-content {
+	table {
+		border-width: 1px 0 0 1px;
+		margin-bottom: 24px;
+	}
+
+	th:first-child,
+	td:first-child {
+		padding-left: 0;
+	}
+
+	th,
+	td {
+		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}
+
+	caption,
+	th,
+	td {
+		font-weight: normal;
+		text-align: left;
+		padding: 5px;
+		vertical-align: middle;
+	}
+
+	th {
+		border-width: 0 1px 1px 0;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 85%;
+	}
+
+	td {
+		border-width: 0 1px 1px 0;
+	}
+}
+
+/* Code */
+code, kbd, tt, var, samp, pre {
+	font-family: monospace, serif;
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	font-style: normal;
+}
+
+pre {
+	padding: 15px;
+	border: 1px solid rgba(0,0,0,0.1);
+}
+
+/* Various */
+address {
+	margin: 0 0 15px;
+}
+
+.sr-only,
+.screen-reader-text {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
+
+/* Embeds and iframes
+=================================== */
+
+embed,
+iframe,
+object,
+video,
+audio {
+	margin-bottom: 15px;
+	max-width: 100%;
+}
+
+p > embed,
+p > iframe,
+p > object,
+p > audio,
+span > embed,
+span > iframe,
+span > object,
+span > audio {
+	margin-bottom: 0;
+}
+
+#map,
+.map * {
+	max-width: none !important;
+}
+
+
+/* General Form Styling
+=================================== */
+
+label {
+	display: block;
+	margin: 0 0 2px;
+	font-weight: normal;
+}
+
+input,
+textarea {
+	transition: all 0.18s;
+	display: inline-block;
+	font-size: inherit;
+	letter-spacing: 2px;
+	width: 100%;
+	max-width: 100%;
+	height: 36px;
+	padding: 8px 12px 6px 15px;	
+	line-height: normal;	
+	background-color: #ebebeb;
+	background-image: none;
+	border-radius: 50px;
+	border: none;
+	box-shadow: inset 1px 1px 0 0 rgba(0,0,0,0.1);
+
+	&:focus, &:hover {
+		outline: none;
+		background-color: #eee;
+		box-shadow: inset 1px 1px 0 0 rgba(0,0,0,0.2);
+	}
+
+	@media ( max-width: $screen-xs-max ) {
+		width: 100%;
+	}
+}
+
+input[type="search"] { /* Restoring box-sizing */
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+textarea {
+	height: auto;
+}
+
+select {
+	max-width: 100%;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	margin: 4px 0 0;
+	margin-top: 1px \9; // IE8-9
+	line-height: normal;
+	width: auto;
+	height: auto;
+}
+
+fieldset {
+	margin: 0 0 15px;
+	padding: 0;
+	border: none;
+	min-width: 0;
+}
+
+/* Placeholder text color */
+@include placeholder {
+	color: rgba($text-color, 0.3);
+	font-weight: normal;
+	font-size: 11px;
+	opacity: 1;
+	text-transform: uppercase;
+}
+
+
+/* Buttons
+=================================== */
+
+.btn,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button[type="submit"] {
+	display: inline-block;
+	font-weight: normal;
+	margin: 0;
+	line-height: normal;
+	border: none;
+	box-shadow: none;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	white-space: nowrap;
+	transition: 0.18s background-color ease, color 0.18s ease, 0.18s border-color ease;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	border-radius: 50px;
+	width: auto;
+	height: auto;
+	background-image: none;
+	padding: 12px 25px 11px;
+	font-size: 11px;
+	letter-spacing: 2px;
+	background-color: #111;
+	color: #FFF;
+
+	&:active {
+		outline: none;
+	}
+
+	&:hover {
+		background: #222;
+		color: #FFF;
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}
+
+
+/* Magnific Popup Overrides
+=================================== */
+.mfp-bg {
+	background-color: #000;
+}
+
+.mfp-preloader {
+	color: #FFF;
+
+	a, a:hover {
+		color: #FFF;
+	}
+}
+
+.mfp-container:not(.mfp-s-error) {
+	.mfp-preloader {
+		@include spinner;
+		background-color: #FFF;
+		text-indent: -999em;
+		margin: 0 auto;
+	}
+}
+
+button.mfp-close,
+button.mfp-arrow {
+	border: none;
+	opacity: 1;
+
+	&:hover {
+		background: none;
+		border: none;
+	}
+}
+
+.mfp-close-btn-in {
+	.mfp-close {
+		color: #FFF;
+	}
+}
+
+.mfp-image-holder .mfp-close,
+.mfp-iframe-holder .mfp-close {
+	color: #FFF;
+}
+
+.mfp-arrow {
+	line-height: 0.3;
+
+	&:before,
+	&:after {
+		border: none;
+	}
+
+	&:after {
+		font-family: FontAwesome;
+		font-size: 70px;
+		color: #FFF;
+	}
+}
+
+.mfp-arrow-right {
+	&:after,
+	.mpf-a {
+		content: "\f105";
+	}
+}
+
+.mfp-arrow-left {
+	&:after,
+	.mpf-a {
+		content: "\f104";
+	}
+}
+
+/* Text Helpers
+=================================== */
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-justified {
+	text-align: justify;
+}
+
+.text-uc {
+	text-transform: uppercase;
+}

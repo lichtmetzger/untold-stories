@@ -1,0 +1,613 @@
+/* -----------------------------------------
+	07. Widgets Styling
+----------------------------------------- */
+#sidebar {
+	border: solid 2px #ebebeb;	
+
+	.widget:last-child {
+		border-bottom: 0;
+	}
+}
+
+.widget {
+	padding: 30px;
+	border-bottom: solid 1px #ebebeb;
+	font-size: 13px;
+
+	p {
+		margin: 0 0 15px 0;
+	}
+
+	&.widget-attention {
+		background: #111;
+		color: #fff;
+
+		.widget-title:after {
+			background: #fff;
+		}
+	}
+	
+	#feature-instagram & {
+		padding: 0;
+		margin-bottom: 50px;
+		border: none;
+		position: relative;
+		
+		a[rel="me"] { 
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			background: #fff;
+			padding: 10px;
+			width: 200px;
+			text-align: center;
+			font-size: 11px;
+			-webkit-transform: translate(-50%, -50%);
+			-moz-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+.sidebar .widget:last-child,
+.widget p:last-child { /* Nullify bottom margin for last elements in widgets and sidebars */
+	margin-bottom: 0;
+}
+
+.widget-title,
+.comment-reply-title {
+	text-align: center;
+	font-size: 14px;
+	letter-spacing: 3px;
+	position: relative;
+	margin-bottom: 30px;
+
+	&:after {
+		content: '';
+		position:absolute;
+		bottom: -10px;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+  		-ms-transform: translateX(-50%);
+  		transform: translateX(-50%);						
+		width: 30px;
+		height: 2px;
+		background: #111;
+	}
+
+	label {
+		text-transform: none;
+		display: block;
+		font-size: inherit;
+		margin: 0;
+		line-height: inherit;
+		font-weight: inherit;
+	}
+}
+
+.widgets-inset {
+	margin: 5px 0 25px;
+
+	.widget {
+		padding: 0 15px;
+		border: none;
+		margin: 0 0 30px;
+	}
+
+	.single &,
+	.page &,
+	.archive & {
+		> .widget-title {
+			border-top: solid 2px $border-color;
+			border-bottom: solid 1px $border-color;
+			font-size: 16px;
+			letter-spacing: 3px;
+			padding: 16px 0;
+			margin: 0 0 25px;
+
+			&:after,
+			&:before {
+				display: none;
+			}
+		}
+	}
+}
+
+
+/* WIDGET: #Callout Widget
+========================================= */
+.ci-action-box {
+	position: relative;
+
+	.widget-title {
+		color: #FFF;
+		border: 0;
+		margin: -10px 0 0;
+		font-size: 18px;
+		width: 100%;
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		letter-spacing: 0;
+
+		&:after,
+		&:before {
+			display: none;
+		}
+	}
+}
+
+/* WIDGET: #List Widgets
+========================================= */
+.widget {
+	select {
+		width: 100%;
+		padding: 5px 10px;
+		border-radius: 0;
+		border: 1px solid $border-color;
+	}
+}
+
+.widget_meta,
+.widget_pages,
+.widget_categories,
+.widget_archive,
+.widget_nav_menu,
+.widget_recent_entries {
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		ul {
+			margin-left: 15px;
+		}
+
+		li {
+			line-height: normal;
+			display: block;
+			position: relative;
+
+			a {
+				display: block;
+				padding: 11px 0;
+				border-bottom: 1px solid $border-color;
+			}
+
+			&.current-cat,
+			&:hover {
+				> .count,
+				> .untoldstories-count {
+
+				}
+			}
+
+			.count,
+			.untoldstories-count {
+				position: absolute;
+				right: 0;
+				top: 8px;
+				font-size: 12px;
+				font-weight: bold;
+				font-style: italic;
+				transition: all 0.18s ease;
+				padding: 4px 3px;
+			}
+		}
+	}
+}
+
+.widget_recent_comments,
+.widget_rss {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			display: block;
+			padding: 11px 0;
+			border-bottom: 1px solid $border-color;
+		}
+	}
+}
+
+.widget_pages,
+.widget_categories,
+.widget_archive {
+	select {
+		@include select-style;
+	}
+}
+
+/* WIDGET: #RSS
+========================================= */
+.widget_rss {
+	li {
+		a {
+			display: block;
+			margin-bottom: 5px;
+		}
+	}
+
+	.rss-date {
+		display: block;
+		text-transform: uppercase;
+		margin-bottom: 5px;
+		font-size: 12px;
+	}
+
+	cite {
+		display: block;
+		margin-top: 5px;
+	}
+}
+
+/* WIDGET: #Search
+========================================= */
+.searchform,
+.untoldstories-search-form{
+	> div {
+		position: relative;
+	}
+
+	input[type="text"],
+	input[type="search"] {
+		// Styling for the search input if required
+
+		.site-tools & {
+			border: none;
+			background: rgba(255,255,255,0.2);
+			border-radius: 50px;
+			height: 25px;
+			text-transform: uppercase;
+			color: #fff;
+			font-size: 11px;
+		}
+	}
+
+	.searchsubmit {
+		position: absolute;
+		top: 0;
+		right: 0;
+		line-height: 1;
+		padding: 0 10px;
+		height: 100%;
+		background-color: transparent;
+		color: #222;
+
+		.site-tools & {
+			color: #e4e4e4;
+		}
+	}
+}
+
+
+/* WIDGET: #Flickr
+========================================= */
+.flickr_badge_image {
+	float: left;
+	width: 33%;
+	
+	img {
+		width: 100%;		
+	}
+
+	a {
+		display: block;
+		line-height: 0;
+	}
+}
+
+/* WIDGET: #About
+========================================= */
+
+.widget_about {
+	text-align: center;
+
+	.widget_about_avatar {
+		img {
+			border: solid 1px #ebebeb;
+			margin: 10px 0;
+			padding: 5px;
+
+			&.img-round {
+				border-radius: 100%;
+			}
+		}
+	}
+
+	.widget_about_sig {
+		font-size: 10px;
+		letter-spacing: 3px;
+
+		img, span {
+			display: block;
+			margin: 0 auto;		
+		}
+
+		img {
+			margin-top: 5px;
+		}
+
+		span {
+			margin-top: 5px;
+			font-size: 14px;
+			letter-spacing: 0;
+		}
+	}
+}
+
+
+/* WIDGET: #Text Widget
+========================================= */
+
+.widget_text p:last-child {
+	margin-bottom: 0;
+}
+
+
+/* WIDGET: #Twitter
+========================================= */
+.widget_untoldstories_twitter_widget {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			margin-bottom: 12px;
+		}
+
+		li:first-child {
+			padding-top: 0;
+		}
+	}
+
+	.twitter-time {
+		display: block;
+		font-size: 0.85em;
+	}
+}
+
+
+/* WIDGET: #Calendar
+================================================== */
+#wp-calendar {
+	width: 100%;
+
+	a {
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	caption {
+		text-align: left;
+		margin-top: 10px;
+		background: none repeat scroll 0 0 rgba(0, 0, 0, 0.03);
+		padding: 9px;
+	}
+
+	thead {
+		font-size: 10px;
+
+		th {
+			background: rgba(0, 0, 0, 0.1);
+			font-weight: bold;
+			padding: 8px;
+		}
+	}
+
+	tbody {
+		td { background: none; border: 1px solid rgba(0, 0, 0, 0.1); text-align: center; padding: 3px;}
+		td:hover { background: rgba(0, 0, 0, 0.1); }
+		.pad { background: none; }
+	}
+
+	tfoot {
+		#next { font-size: 10px; text-transform: uppercase; text-align: right; }
+		#prev { font-size: 10px; text-transform: uppercase; padding-top: 10px; }
+	}
+}
+
+
+/* WIDGET: #Newsletter
+================================================== */
+.widget_untoldstories_newsletter {
+	input[type="email"] {
+		text-align: center;
+	}
+
+	input[type="submit"] {
+		width: 100%;
+	}
+}
+
+/* WIDGET: #Socials
+================================================== */
+.widget {
+	.socials {
+		float: none;
+		text-align: center;
+
+		li {
+			float: none;
+			display: inline-block;
+
+			a {
+				margin: 0 7px;
+				padding: 0;
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+/* WIDGET: #Instagram
+================================================== */
+.untoldstories-instagram-lite {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	
+	li {
+		float: left;
+		width: 33%;
+	}
+}
+
+#footer .untoldstories-instagram-lite-widget {
+	padding: 0;
+	border: 0;	
+}
+
+.footer-widget-area {
+	.widget {
+		padding: 0;
+		margin: 0;
+		border: none;
+	}
+
+	.widget-title {
+		display: none;
+	}
+
+	.instagram-pics {
+		li {
+			border-bottom: 0;
+			padding: 0;
+			width: auto;
+			max-height: 235px;
+
+			img {
+				max-height: 100%;
+			}
+		}
+	}
+
+	.null-instagram-feed {
+		p {
+			display: none;
+		}
+	}
+}
+
+/* WIDGET: #Tagloud
+================================================== */
+.tagcloud a {
+	font-size: 13px !important;
+	margin-right: 10px;
+}
+
+
+/* WIDGET: #Latest Posts
+================================================== */
+.widget_posts_list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	.entry {
+		margin-bottom: 25px;		
+	}
+
+	li:last-child .entry {
+		margin-bottom: 0;
+	}
+
+	.entry-meta {
+		margin: 0 0 10px 0;
+		text-align: left;
+	}
+
+	.entry-featured {
+		margin-bottom: 15px;
+	}
+
+	.entry-title {
+		font-size: 15px;
+		text-align: left;
+		margin: 0;
+		padding: 0;
+
+		&:after {
+			content: '';
+			position:absolute;
+			top: auto;
+			left: auto;			
+			width: auto;
+			height: auto;
+			background: transparent;
+		}
+	}
+
+	&.widget_posts_list_alt {
+
+		li {
+			padding-bottom: 10px;
+			margin-bottom: 10px;
+			border-bottom: solid 1px #ececec;
+			min-height: 70px;
+
+			&:last-child {
+				margin-bottom: 0;
+				border-bottom: 0;
+			}
+		}
+
+		.entry {
+			margin: 0;
+		}
+
+		.entry-title {
+			font-size: 13px; 			
+		}
+
+		.entry-title, .entry-meta {
+			margin-left: 95px; 
+		}
+
+		.entry-meta {
+			line-height: 1;
+			margin-bottom: 5px;
+		}
+
+		.entry-featured {
+			position: absolute;
+			top: 3px;
+			left: 0;
+			width: 80px;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+/* WIDGET: #Categories with background image
+========================================= */
+.widget_untoldstories-category-image {
+	.ci-category-image {
+		min-height: 200px;
+		position: relative;
+
+		a {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			color: #fff;
+
+			h3 {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				margin-bottom: 0;
+
+				&:after {
+					background: transparent;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+/* -----------------------------------------
+	03. Header
+----------------------------------------- */
+.site-bar {
+	background: #111;
+	padding: 13px 30px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100000;
+
+	&.site-bar-fixed {
+		position: fixed;
+
+		+ .site-logo {
+			padding-top: 100px;
+		}
+	}
+
+	.nav {
+		float: left;
+		width: 50%;	
+		padding-top: 4px;	
+	}
+
+	a {
+		color: #fff;
+	}
+}
+
+.site-logo {
+	padding: 60px 50px 50px;
+	text-align: center;
+
+	a {
+		display: block;
+	}
+}
+
+.tagline {
+	font-size: 10px;		
+	color: #7e7e7e;
+	letter-spacing: 3px;
+	margin-bottom: 0;
+}
+
+.admin-bar {
+	.site-bar-fixed {
+		top: 32px;
+	}
+}
