@@ -824,6 +824,25 @@ function untoldstories_migrate_custom_css_to_customizer() {
 	}
 }
 
+/**
+ * Set default options when inserting images into posts.
+ * This is mainly used to get higher quality thumbnails and link
+ * directly to the image file (for lightboxes).
+ */
+add_action( 'admin_head-post.php', 'untoldstories_set_default_image_insert_options' );
+add_action( 'admin_head-post-new.php', 'untoldstories_set_default_image_insert_options' );
+function untoldstories_set_default_image_insert_options() {
+    ?>
+    <script>
+        if ( typeof setUserSetting !== 'undefined' ) {
+            setUserSetting( 'align', 'none' ); // none || left || center || right
+            setUserSetting( 'imgsize', 'medium' ); // thumbnail || medium || large || full
+            setUserSetting( 'urlbutton', 'file' ); // none || file || post
+        }
+    </script>
+    <?php
+}
+
 
 /**
  *  Common theme features.
