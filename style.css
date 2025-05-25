@@ -4,7 +4,7 @@ Theme URI: http://themeforest.net/item/untold-stories-the-wordpress-blog-theme/1
 Author: CSSIgniter
 Author URI: http://www.cssigniter.com
 Description: The WordPress Blog Theme
-Version: 1.9.3
+Version: 2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: untold-stories
@@ -1689,6 +1689,11 @@ button.mfp-arrow:hover {
 }
 .comment-respond input[type=text], .comment-respond input[type=email], .comment-respond input[type=url] {
   width: 50%;
+}
+
+.antispambee-wrap {
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 .form-submit {
@@ -4491,5 +4496,3 @@ table.my_account_orders {
 .tag-cloud-link {
   border-bottom: 2px solid #111;
 }
-
-/*# sourceMappingURL=style.css.map */
