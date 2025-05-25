@@ -287,6 +287,7 @@ function untoldstories_widgets_init() {
 add_action( 'widgets_init', 'untoldstories_load_widgets' );
 function untoldstories_load_widgets() {
 	require get_template_directory() . '/inc/widgets/untoldstories-about-me.php';
+    require get_template_directory() . '/inc/widgets/untoldstories-about-me-mod.php';
 	require get_template_directory() . '/inc/widgets/untoldstories-latest-posts.php';
 	require get_template_directory() . '/inc/widgets/untoldstories-socials.php';
 	require get_template_directory() . '/inc/widgets/untoldstories-newsletter.php';
