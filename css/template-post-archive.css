@@ -1,0 +1,16 @@
+/* CSS for full post archive template */
+span.kwa_ccount {
+    font-size:0.8em;
+}
+
+span.kwa_ccount.count_0 {
+    color: lightgray;
+}
+
+span.kwa_ccount.count_1 {
+    color: #f2aa00;
+}
+
+span.kwa_ccount.count_multi {
+    color: green;
+}
