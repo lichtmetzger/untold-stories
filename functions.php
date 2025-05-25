@@ -393,45 +393,6 @@ function untoldstories_handle_url_theme_mod_carousel_fullwidth( $value ) {
 	return $value;
 }
 
-
-// Add custom style in WP Editor
-add_action( 'admin_init', 'untoldstories_add_editor_styles' );
-if ( ! function_exists( 'untoldstories_add_editor_styles' ) ) {
-	function untoldstories_add_editor_styles() {
-		add_editor_style( 'css/admin/editor.css' );
-	}
-}
-
-add_filter( 'mce_buttons_2', 'untoldstories_mce_buttons_2' );
-if ( ! function_exists( 'untoldstories_mce_buttons_2' ) ) {
-	function untoldstories_mce_buttons_2( $buttons ) {
-		array_unshift( $buttons, 'styleselect' );
-
-		return $buttons;
-	}
-}
-
-add_filter( 'tiny_mce_before_init', 'untoldstories_insert_wp_editor_formats' );
-if ( ! function_exists( 'untoldstories_insert_wp_editor_formats' ) ) {
-	function untoldstories_insert_wp_editor_formats( $init_array ) {
-		// Define the style_formats array
-		$style_formats = array(
-			// Each array child is a format with it's own settings
-			array(
-				'title'   => esc_html__( 'Opening Text', 'untold-stories' ),
-				'block'   => 'div',
-				'classes' => 'opening',
-				'wrapper' => true,
-			)
-		);
-		// Insert the array, JSON ENCODED, into 'style_formats'
-		$init_array['style_formats'] = json_encode( $style_formats );
-
-		return $init_array;
-	}
-}
-
-
 // Check if gravatar exicsts
 // https://codex.wordpress.org/Using_Gravatars#Checking_for_the_Existence_of_a_Gravatar
 if ( ! function_exists( 'untoldstories_validate_gravatar' ) ) {
