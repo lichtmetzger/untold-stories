@@ -389,6 +389,15 @@
 	iframe {margin-bottom: 0;}
 }
 
+/* Hide large image on first (featured) article */
+.blog article:first-child .entry-featured {
+	display: none;
+}
+
+.category article:first-child .entry-featured {
+	display: none;
+}
+
 .figure-buttons {
 	position: relative;
 }

@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "scripts": {
+    "build-css": "sass --no-source-map --style=compressed style.scss style.min.css",
+    "starts-css": "sass -w --no-source-map --style=compressed style.scss style.min.css"
+  },
+  "devDependencies": {
+    "sass": "^1.83.0"
+  }
+}
