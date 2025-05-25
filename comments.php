@@ -38,9 +38,13 @@
 			<?php
 			    comment_form();
                 if ( is_plugin_active( 'antispam-bee/antispam_bee.php' ) ) {
+                    ob_start();
+                    do_action('antispam_bee_count');
+                    $asb_comments_count = ob_get_clean();
+
                     echo '
                         <div class="antispambee-wrap">
-                            '.sprintf(__('So far, %s spam comments have been deleted.', 'untold-stories'), do_action('antispam_bee_count')).'
+                            '.sprintf(__('So far, %s spam comments have been deleted.', 'untold-stories'), $asb_comments_count).'
                             <br>
                             '.__('If your comment does not appear, it will be published later.', 'untold-stories').'
                         </div>';
