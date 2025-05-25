@@ -1,0 +1,79 @@
+/* CSS for Recipes Overview Page */
+ul.recipe-tiles {
+    padding-left: 0px;
+}
+
+a.recipe-card-wrap {
+    display: block;
+    padding: .7em;
+}
+
+.recipe-card {
+    padding: .7em;
+    box-shadow: 3px 3px 15px -4px #D3D3D3;
+    position: relative;
+}
+
+.recipe-card h3 {
+    margin: .3em;
+    text-align: center;
+}
+
+a.recipe-card-wrap .recipe-excerpt {
+    transition: all 0.5s ease-in-out;
+    position:absolute;
+    left:0;
+    top:0;
+    margin: .3em;
+    padding: .5em;
+    font-size: 1.2em;
+    height:auto;
+    min-height: calc( 100% - 0.3em );
+    background: #fff;
+    opacity:0;
+    z-index: 10;
+    border: 1px dotted #ccc;
+    outline: .3em solid #111;
+}
+
+a.recipe-card-wrap .recipe-excerpt p {
+    font-weight: 600;
+}
+
+/* Hover effects only on Desktop */
+@media (min-width: 768px) {
+    a.recipe-card-wrap:hover .recipe-excerpt {
+        opacity: 1;
+    }
+}
+
+/* Only URL button clickable on Mobile to prevent "tapping through" the content */
+@media (max-width: 768px) {
+    a.recipe-card-wrap .recipe-card {
+        pointer-events:none;
+    }
+    a.recipe-card-wrap.active .recipe-excerpt {
+        opacity: 1;
+    }
+    a.recipe-card-wrap.active .recipe-excerpt .recipe-btn {
+        pointer-events: all;
+    }
+}
+
+a.recipe-card-wrap .recipe-excerpt .recipe-btn {
+    display: block;
+    width: fit-content;
+    padding: 10px 15px 9px;
+    margin-top: 5px;
+    background: #fff;
+    border: solid 1px #ebebeb;
+    font-family: "Montserrat", sans-serif;
+    font-size: 11px;
+    z-index: 3;
+}
+
+@media (min-width: 768px) {
+    a.recipe-card-wrap .recipe-excerpt .recipe-btn {
+        display: none;
+    }
+}

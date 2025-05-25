@@ -72,6 +72,7 @@ function untoldstories_setup() {
 	add_image_size( 'untoldstories_thumb_wide', 0, 260, false);
 	add_image_size( 'untoldstories_thumb_square', 200, 200, true);
 	add_image_size( 'untoldstories_thumb_tall', 690, 1000, true);
+    add_image_size( 'untoldstories_thumb_recipe', 600, 450, true);
 
 	/*
 	 * Navigation menus.
