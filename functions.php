@@ -65,7 +65,7 @@ function untoldstories_setup() {
 	/*
 	 * Image sizes.
 	 */
-	set_post_thumbnail_size( 690, 0, true );
+    add_image_size( 'untoldstories_thumb_post', 600, 0, false);
 	add_image_size( 'untoldstories_thumb_masonry', 690 );
 	add_image_size( 'untoldstories_thumb_slider', 1050, 550, true );
 	add_image_size( 'untoldstories_thumb_slider_small', 720, 459, true );
@@ -73,10 +73,11 @@ function untoldstories_setup() {
 	add_image_size( 'untoldstories_thumb_square', 200, 200, true);
 	add_image_size( 'untoldstories_thumb_tall', 690, 1000, true);
     add_image_size( 'untoldstories_thumb_recipe', 600, 450, true);
+    set_post_thumbnail_size( 600, 0, false );
 
-	/*
-	 * Navigation menus.
-	 */
+    /*
+     * Navigation menus.
+     */
 	register_nav_menus( array(
 		'main_menu'   => esc_html__( 'Main Menu', 'untold-stories' ),
 		'footer_menu' => esc_html__( 'Footer Menu', 'untold-stories' ),
