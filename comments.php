@@ -35,7 +35,17 @@
 <?php if ( comments_open() ): ?>
 	<section id="respond">
 		<div id="form-wrapper" class="group">
-			<?php comment_form(); ?>
+			<?php
+			    comment_form();
+                if ( is_plugin_active( 'antispam-bee/antispam_bee.php' ) ) {
+                    /* @todo: Make this translateable */
+                    echo '
+                        <div style="font-size:80%;text-align:center;">Bisher wurden '.do_action('antispam_bee_count'). ' Spam-Kommentare gel&ouml;scht.
+                        <br />
+                        Sollte dein Kommentar nicht auftauchen, wird er sp&auml;ter freigeschaltet.
+                        </div>';
+                }
+            ?>
 		</div><!-- #form-wrapper -->
 	</section>
 <?php endif; ?>
