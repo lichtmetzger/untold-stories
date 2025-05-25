@@ -65,7 +65,7 @@ function untoldstories_setup() {
 	/*
 	 * Image sizes.
 	 */
-	set_post_thumbnail_size( 690, 455, true );
+	set_post_thumbnail_size( 690, 0, true );
 	add_image_size( 'untoldstories_thumb_masonry', 690 );
 	add_image_size( 'untoldstories_thumb_slider', 1050, 550, true );
 	add_image_size( 'untoldstories_thumb_slider_small', 720, 459, true );
