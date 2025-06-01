@@ -49,11 +49,27 @@ jQuery(function($){
                 if(items.length !== 0) {
                     // Loop through results and build HTML.
                     $.each(items, function(index, item) {
-                        // Fill the cards array with this data.
+                        // Fill the card array with this data.
                         cards[index] = `
-                        <div>
-                            ${item.title}
-                        </div>
+                        <a class="col-sm-4 recipe-card-wrap" href="${item.permalink}">
+                            <div class="recipe-card">
+                                <div class="recipe-content">
+                                    <div class="thumb">
+                                        <img src="${item.imageUrl}" alt="${item.title}" />
+                                    </div>
+                                    <h3 class="title">
+                                        ${item.title}
+                                    </h3>
+                                </div>
+                                <div class="recipe-excerpt">
+                                    <p>${item.title}</p>
+                                    ${item.excerpt}
+                                    <div class="recipe-btn" data-url="${item.permalink}">
+                                        Go to recipe (TODO: Translate)
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                         `;
                     });
 
@@ -92,7 +108,7 @@ jQuery(function($){
         return false;
     }
 
-    $('#exhibitor-search input').on('change', function() {
+    $('.recipe-filter input').on('change', function() {
         postRecipesFilterForm();
         return false;
     });

@@ -30,39 +30,13 @@ wp_enqueue_script('template-recipes-v2', get_stylesheet_directory_uri() . '/js/t
                                 if (!is_wp_error($recipeCategories)) {
                                     foreach ( $recipeCategories as $term ) {
                                         echo '
-                                            <input type="checkbox" id="' . $term->term_id . '" name="recipe-categories[]" value="' . esc_html($term->name) . '">
+                                            <input type="checkbox" id="' . $term->term_id . '" name="recipe-categories[]" value="' . $term->term_id . '">
                                             <label for="' . $term->term_id . '">' . esc_html($term->name) . '</label>';
                                     }
                                 }
                                 ?>
                             </div>
-
-                            <?php
-                            $recipes = new WP_Query([
-                                'post_type' => 'post',
-                                'posts_per_page' => -1,
-                                /* @todo: Make this category dynamic in customizer */
-                                'category_name' => 'homemaderecipes',
-                                'order_by' => 'date',
-                                'order' => 'desc',
-                            ]);
-                            ?>
-
-                            <?php if($recipes->have_posts()): ?>
-                                <ul class="recipe-tiles">
-                                    <?php
-                                    while($recipes->have_posts()) : $recipes->the_post();
-                                        get_template_part('partials/content', 'recipe');
-                                    endwhile;
-                                    ?>
-                                </ul>
-                                <?php wp_reset_postdata(); ?>
-                            <?php endif; ?>
-
-                        </div>
-                        <?php /* <div class="col-md-4">
-		                  <?php get_sidebar() ?>
-                        </div> */ ?>
+                            <div id="response"></div>
                     </div>
                 </div>
             </div>

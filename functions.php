@@ -10,6 +10,7 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/customizer-styles.php';
 require get_template_directory() . '/inc/user-meta.php';
 require get_template_directory() . '/inc/term-meta.php';
+require get_template_directory() . '/inc/rest-endpoints.php';
 
 add_action( 'after_setup_theme', 'untoldstories_content_width', 0 );
 function untoldstories_content_width() {
