@@ -74,17 +74,19 @@ function filter_recipes_endpoint() {
  * @return WP_REST_Response Multidimensional array with all recipe posts.
  */
 function filter_recipes_callback( $request ) {
-    $categories = explode( ',', $request->get_param( 'recipeCategories' ) );;
+    $categories = explode( ',', $request->get_param( 'recipeCategories' ) );
+    $paged = max( 1, intval( $request->get_param( 'page' ) ) );
     $data       = array();
 
     $args = array(
         'post_type'      => 'post',
         'post_status'    => 'publish',
-        'posts_per_page' => 60,
+        'posts_per_page' => 18,
+        'paged'          => $paged,
         // TODO: Make this dynamic
-        'category_name' => 'homemaderecipes',
-        'order_by' => 'date',
-        'order' => 'desc',
+        'category_name'  => 'homemaderecipes',
+        'order_by'       => 'date',
+        'order'          => 'desc',
     );
 
     if ( ! empty( $categories[0] ) ) {
@@ -107,9 +109,10 @@ function filter_recipes_callback( $request ) {
             $post_id = get_the_ID();
 
             // Fields.
-            $subdata['title']    = get_the_title($post_id);
-            $subdata['excerpt']  = get_the_excerpt($post_id);
-            $subdata['permalink']  = get_permalink($post_id);
+            $subdata['title']     = get_the_title($post_id);
+            $subdata['excerpt']   = get_the_excerpt($post_id);
+            $subdata['category']  = get_the_terms($post_id, 'recipe-categories')[0]->name;
+            $subdata['permalink'] = get_permalink($post_id);
             $subdata['imageUrl']  = get_the_post_thumbnail_url($post_id, 'untoldstories_thumb_recipe');
 
             $data[]           = $subdata;
@@ -131,7 +134,7 @@ function filter_recipes_callback( $request ) {
 
     $response = new WP_REST_Response( $response_data );
     $response->header( 'X-WP-Total', (int) $query->found_posts );
-    // $response->header( 'X-WP-TotalPages', (int) $query->max_num_pages );
+    $response->header( 'X-WP-TotalPages', (int) $query->max_num_pages );
 
     return $response;
 }

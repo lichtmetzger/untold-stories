@@ -1,6 +1,49 @@
 /* CSS for Recipes Overview Page */
-ul.recipe-tiles {
-    padding-left: 0;
+.recipe-filter {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 0 .7em;
+}
+
+/* Hide the native checkbox */
+.recipe-filter .big-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+/* Whole box styling */
+.recipe-filter .big-checkbox .box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    cursor: pointer;
+    background-color: #ebebeb;
+    transition: background-color 0.3s;
+}
+
+.recipe-filter .big-checkbox .checkmark {
+    width: 1rem;
+}
+
+.recipe-filter .big-checkbox .checkmark::before {
+    font-family: 'FontAwesome', sans-serif;
+    content: "\f00d";
+    color: #bcbcbc;
+}
+
+.recipe-filter .big-checkbox input[type="checkbox"]:checked + .box {
+    background-color: #000;
+    color: white;
+}
+.recipe-filter .big-checkbox input[type="checkbox"]:checked + .box .checkmark::before {
+    font-family: 'FontAwesome', sans-serif;
+    content: "\f00c";
+    color: #fff;
+}
+
+#response {
+    min-height: 80vh;
 }
 
 a.recipe-card-wrap {
@@ -13,6 +56,11 @@ a.recipe-card-wrap {
     padding: .7em;
     box-shadow: 3px 3px 15px -4px #D3D3D3;
     position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.recipe-card:hover {
+    transform:rotate(2deg)scale(1.1);
 }
 
 .recipe-card h3 {
@@ -20,61 +68,40 @@ a.recipe-card-wrap {
     text-align: center;
 }
 
-a.recipe-card-wrap .recipe-excerpt {
-    transition: all 0.5s ease-in-out;
-    position:absolute;
-    left:0;
-    top:0;
-    margin: .3em;
-    padding: .5em;
-    font-size: 1.2em;
-    height:auto;
-    min-height: calc( 100% - 0.3em );
-    background: #fff;
-    opacity:0;
-    z-index: 10;
-    border: 1px dotted #ccc;
-    outline: .3em solid #111;
+.recipe-card .category {
+    font-size: 0.9rem;
+    font-weight: 300;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: .1rem .5rem;
 }
 
-a.recipe-card-wrap .recipe-excerpt p {
-    font-weight: 600;
+#pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
 }
 
-/* Hover effects only on Desktop */
-@media (min-width: 768px) {
-    a.recipe-card-wrap:hover .recipe-excerpt {
-        opacity: 1;
-    }
+#pagination .recipes-page-btn {
+    border: 0;
+    background: #ebebeb;
+    color: #000;
+    padding: 0.5rem 0.8rem;
 }
 
-/* Only URL button clickable on Mobile to prevent "tapping through" the content */
-@media (max-width: 768px) {
-    a.recipe-card-wrap .recipe-card {
-        pointer-events:none;
-    }
-    a.recipe-card-wrap.active .recipe-excerpt {
-        opacity: 1;
-    }
-    a.recipe-card-wrap.active .recipe-excerpt .recipe-btn {
-        pointer-events: all;
-    }
+#pagination .recipes-page-btn.active {
+    background: #000;
+    color: #fff;
 }
 
-a.recipe-card-wrap .recipe-excerpt .recipe-btn {
-    display: block;
-    width: fit-content;
-    padding: 10px 15px 9px;
-    margin-top: 5px;
-    background: #fff;
-    border: solid 1px #ebebeb;
-    font-family: "Montserrat", sans-serif;
-    font-size: 11px;
-    z-index: 3;
+#pagination .ellipsis {
+    padding: 0.5rem 0.8rem;
 }
 
-@media (min-width: 768px) {
-    a.recipe-card-wrap .recipe-excerpt .recipe-btn {
-        display: none;
+@media(max-width: 767px) {
+    .recipe-filter {
+        flex-direction: column;
     }
 }

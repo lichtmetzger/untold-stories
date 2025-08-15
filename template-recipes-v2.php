@@ -30,13 +30,19 @@ wp_enqueue_script('template-recipes-v2', get_stylesheet_directory_uri() . '/js/t
                                 if (!is_wp_error($recipeCategories)) {
                                     foreach ( $recipeCategories as $term ) {
                                         echo '
+                                        <label class="big-checkbox" for="' . $term->term_id . '">
                                             <input type="checkbox" id="' . $term->term_id . '" name="recipe-categories[]" value="' . $term->term_id . '">
-                                            <label for="' . $term->term_id . '">' . esc_html($term->name) . '</label>';
+                                            <div class="box">
+                                                <span class="checkmark"></span>
+                                                ' . esc_html($term->name) . '
+                                            </div>
+                                        </label>';
                                     }
                                 }
                                 ?>
                             </div>
                             <div id="response"></div>
+                            <div id="pagination"></div>
                     </div>
                 </div>
             </div>
