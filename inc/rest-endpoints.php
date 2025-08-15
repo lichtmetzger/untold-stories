@@ -113,7 +113,7 @@ function filter_recipes_callback( $request ) {
             $subdata['excerpt']   = get_the_excerpt($post_id);
             $subdata['category']  = get_the_terms($post_id, 'recipe-categories')[0]->name;
             $subdata['permalink'] = get_permalink($post_id);
-            $subdata['imageUrl']  = get_the_post_thumbnail_url($post_id, 'untoldstories_thumb_recipe');
+            $subdata['imageUrl']  = get_the_post_thumbnail_url($post_id, 'untoldstories_thumb_post');
 
             $data[]           = $subdata;
             $response_message = 'Found recipes by filter data.';
