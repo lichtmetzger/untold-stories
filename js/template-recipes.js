@@ -141,6 +141,8 @@ jQuery(function($){
 
     $(document).on('click', '.recipes-page-btn', function() {
         let page = parseInt($(this).data('page'));
+        // Scroll back to top
+        document.getElementById("site-content").scrollIntoView();
         postRecipesFilterForm(page);
     });
 
