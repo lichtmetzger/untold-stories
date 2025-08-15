@@ -20,32 +20,29 @@ wp_enqueue_script('template-recipes', get_stylesheet_directory_uri() . '/js/temp
                                 <?php wp_link_pages(); ?>
                             </div>
 
-                            <?php
-                            $recipes = new WP_Query([
-                                'post_type' => 'post',
-                                'posts_per_page' => -1,
-                                /* @todo: Make this category dynamic in customizer */
-                                'category_name' => 'homemaderecipes',
-                                'order_by' => 'date',
-                                'order' => 'desc',
-                            ]);
-                            ?>
+                            <div class="recipe-filter">
+                                <?php
+                                $recipeCategories = get_terms([
+                                    'taxonomy'   => 'recipe-categories',
+                                    'hide_empty' => true,
+                                ]);
 
-                            <?php if($recipes->have_posts()): ?>
-                                <ul class="recipe-tiles">
-                                    <?php
-                                    while($recipes->have_posts()) : $recipes->the_post();
-                                        get_template_part('partials/content', 'recipe');
-                                    endwhile;
-                                    ?>
-                                </ul>
-                                <?php wp_reset_postdata(); ?>
-                            <?php endif; ?>
-
-                        </div>
-                        <?php /* <div class="col-md-4">
-		                  <?php get_sidebar() ?>
-                        </div> */ ?>
+                                if (!is_wp_error($recipeCategories)) {
+                                    foreach ( $recipeCategories as $term ) {
+                                        echo '
+                                        <label class="big-checkbox" for="' . $term->term_id . '">
+                                            <input type="checkbox" id="' . $term->term_id . '" name="recipe-categories[]" value="' . $term->term_id . '">
+                                            <div class="box">
+                                                <span class="checkmark"></span>
+                                                ' . esc_html($term->name) . '
+                                            </div>
+                                        </label>';
+                                    }
+                                }
+                                ?>
+                            </div>
+                            <div id="response"></div>
+                            <div id="pagination"></div>
                     </div>
                 </div>
             </div>
